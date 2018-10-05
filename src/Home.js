@@ -30,7 +30,7 @@ class Home extends React.Component {
         
             ? <div className="grid-wrap">
           <div key={results.id}>
-                
+                {results.map(this.image)}
                 <a className="list-block" href="#">
                     <figure>
                         <img src={results.url} alt={results.title} />
